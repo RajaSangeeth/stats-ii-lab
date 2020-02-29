@@ -16,8 +16,8 @@ set.seed(123) # for consistent results
 Let's assume that salary is an additive function of education and experience:
 
 ```{r }
-# experience - 1000 samples with mean of 15 and of 4 (years)
-exp <- rnorm(1000, 15, 4) 
+# experience - 1000 samples with mean of 15 and sd of 4 (years)
+exp <- rnorm(1000, 15, 4)
 
 # education - 1000 samples with mean of 12 and of 2 (years)
 educ <- rnorm(1000, 12, 2)
@@ -113,7 +113,6 @@ celebPlot3 <- ggplot(dat,
     geom_point() +
   xlab("Beauty") + 
   ylab("Talent") +
-  geom_smooth(method = "lm", se = FALSE)
 
 celebPlot3
 ```
