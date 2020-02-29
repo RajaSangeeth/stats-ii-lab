@@ -113,6 +113,7 @@ celebPlot3 <- ggplot(dat,
     geom_point() +
   xlab("Beauty") + 
   ylab("Talent") +
+  geom_smooth(method = "lm", se = T)
 
 celebPlot3
 ```
